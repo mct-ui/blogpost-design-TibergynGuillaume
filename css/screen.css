@@ -177,6 +177,42 @@ a:focus {
     }
 }
 
+/*
+    components: author
+*/
+.c-author{
+    display: flex;
+    align-items: center;
+}
+.c-author__image{
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+}
+
+.c-author__name,
+.c-author__meta {
+    margin-bottom:0;
+}
+
+.c-author__meta {
+    font-size: 14px;
+    font-family: "Inter", "Helvetica Neue", Helvetica, arial sans-serif;
+    line-height: 24px;
+}
+
+.c-author__name {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.c-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 16px;
+}
+
 /* Large devices (landscape tablets, desktops, 992px and up) */
 
 @media (min-width: 992px) {}
@@ -191,6 +227,7 @@ a:focus {
     Inlined to avoid the additional HTTP request:
     http://www.phpied.com/delay-loading-your-print-css/
 */
+
 
 @media print {
     *,
